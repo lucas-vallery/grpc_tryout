@@ -1,0 +1,6 @@
+# Ignore the virtual env files
+env/
+
+# Ignore the protoc genrated files
+/interface/*.py
+/interface/*pyi
