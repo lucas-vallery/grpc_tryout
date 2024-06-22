@@ -1,0 +1,11 @@
+{
+    "displays": 
+    {
+        "display1": 
+        {
+            "name": "test",
+            "ip_adress": "localhost",
+            "grpc_port": "50051"
+        }
+    }
+}

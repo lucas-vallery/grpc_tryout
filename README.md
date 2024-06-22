@@ -14,3 +14,11 @@ pip freeze > requirements.txt
 ```bash
 python -m grpc_tools.protoc -I interface/ --python_out=interface/ --pyi_out=interface/--grpc_python_out=interface/ interface/camera-inteface.proto
 ```
+
+# Screen brightness control Python on Linux
+Please run the following commands before expecti,g any change on the brightness of your screen. A reboot may be needed.
+```bash
+echo 'SUBSYSTEM=="backlight",RUN+="/bin/chmod 666 /sys/class/backlight/%k/brightness /sys/class/backlight/%k/bl_power"' | sudo tee -a /etc/udev/rules.d/backlight-permissions.rules
+
+sudo udevadm control --reload-rules && udevadm trigger
+```

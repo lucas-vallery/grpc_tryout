@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+service InterDisplayCommunication {
+    rpc SetDisplaySettings (DisplaySettings) returns (Answer) {}
+    rpc GetDisplaySettings (Empty) returns (DisplaySettings) {}
+}
+
+message DisplaySettings {
+    int32 brightness = 1;
+}
+
+message Answer {
+    bool error = 1;
+}
+
+message Empty {
+
+}

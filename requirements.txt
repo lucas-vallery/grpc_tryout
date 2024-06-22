@@ -1,3 +1,4 @@
 grpcio==1.64.1
 grpcio-tools==1.64.1
 protobuf==5.27.1
+screen_brightness_control==0.23.0
