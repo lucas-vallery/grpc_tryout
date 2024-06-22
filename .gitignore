@@ -2,5 +2,8 @@
 env/
 
 # Ignore the protoc genrated files
-/interface/*.py
-/interface/*pyi
+interface/*.py
+interface/*pyi
+
+# Ignore pycache folder
+**/__pycache__

@@ -6,7 +6,7 @@ service Camera {
 
 message CameraSettings {
     int32 onScreenWidth = 1;
-    int32 onscreenHeight = 2;
+    int32 onScreenHeight = 2;
 }
 
 message Answer {
